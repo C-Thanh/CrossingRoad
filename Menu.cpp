@@ -277,7 +277,7 @@ int main()
     SetConsoleTitle(TEXT("My Game Menu"));
     SetFontAttribute();
     int x = 30, y = 10;
-    Menu *GAME = new Menu(x, y, 2, 0, 15);
+    Menu *GAME = new Menu(x, y, 0, 8, 15);
     system("color f0"); // remember to change this color too, its the whole background color
     noCursor();
 
