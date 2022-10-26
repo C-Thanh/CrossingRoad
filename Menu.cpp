@@ -277,12 +277,12 @@ int main()
     SetConsoleTitle(TEXT("My Game Menu"));
     SetFontAttribute();
     int x = 30, y = 10;
-    Menu *GAME = new Menu(x, y, 4, 8, 16);
-    system("color fa"); // remember to change this color too, its the whole background color
+    Menu *GAME = new Menu(x, y, 4, 0, 16);
+    system("color f0"); // remember to change this color too, its the whole background color
     noCursor();
 
     thread UI(&Menu::drawMenu, *GAME); // require a pointer to member function, an object, parameters (maybe)
-    music.join();
+    //music.join();
     UI.join();
     system("pause");
 }
